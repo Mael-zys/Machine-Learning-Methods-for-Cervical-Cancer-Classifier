@@ -20,21 +20,29 @@ This is a [challenge](https://www.kaggle.com/c/ima205challenge2021/overview) for
 
 ## Dataset [DownLoad](https://drive.google.com/file/d/1KAAGC6vucd3p0wOJ8RPF30jo8-zuDxbI/view?usp=sharing)
 
+Change the data directory in the machine_learning_dataloader.py to your data directory.
+
 Now I don't have the test labels
 
 ## Train and Predict
 
 - You can firstly have a loot at the arguments of the machine_learning_main.py
 
+```
     python machine_learning_main --help
+```
 
 - Example
 
+```
     python -u machine_learning_main.py --classifier "SVM" --binary True --mask_mode True --extract_feature "martin" --cv_mode "Grid"
+```
 
 - You can also write all these codes in the machine_learning_main.sh and then run them all
 
+```
     sh machine_learning_main.sh
+```
 
 ## Result
 
