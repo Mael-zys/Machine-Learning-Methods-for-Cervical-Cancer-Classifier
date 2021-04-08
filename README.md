@@ -44,7 +44,7 @@ Here are some results
 
 
 | Classifier | feature_extraction | feature_selection | feature number | Public Score |
-|  ----  | ----  |
+|  ----  | ----  | ---- | ---- | ---- |
 | SVM | marina | None | None | 0.94339 |
 | AutoML | marina | None | None | 0.94072 |
 
@@ -53,8 +53,8 @@ Here are some results
 ### Multi-class classification
 
 
-| Classifier | feature_extraction | feature_selection | Public Score |
-|  ----  | ----  |
+| Classifier | feature_extraction | feature_selection | feature number | Public Score |
+|  ----  | ----  | ---- | ---- | ---- |
 | SVM | martin_marina_dong | RF | 50 | 0.77220 |
 | XGBoost | martin_marina_dong | RF | 50 | 0.76109 |
 | AutoML | martin_marina_dong | None | None | 0.76821 |
