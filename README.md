@@ -26,10 +26,10 @@ Now I don't have the test labels
 
 ## Train and Predict
 
-- You can firstly have a loot at the arguments of the machine_learning_main.py
+- You can firstly have a look at the arguments of the machine_learning_main.py
 
 ```
-    python machine_learning_main --help
+    python machine_learning_main.py --help
 ```
 
 - Example
