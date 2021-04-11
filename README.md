@@ -16,7 +16,8 @@ This is a [challenge](https://www.kaggle.com/c/ima205challenge2021/overview) for
 >opencv-contrib-python 3.4.2. \
 >opencv-python         4.1.2.30 \
 >xgboost               1.2.0 \
->shap                  0.36.0
+>shap                  0.36.0 \
+>mljar-supervised      0.8.9
 
 ## Dataset [DownLoad](https://drive.google.com/file/d/1KAAGC6vucd3p0wOJ8RPF30jo8-zuDxbI/view?usp=sharing)
 
