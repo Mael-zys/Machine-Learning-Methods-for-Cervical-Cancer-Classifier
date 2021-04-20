@@ -21,7 +21,7 @@ This is a [challenge](https://www.kaggle.com/c/ima205challenge2021/overview) for
 
 ## Dataset [DownLoad](https://drive.google.com/file/d/1KAAGC6vucd3p0wOJ8RPF30jo8-zuDxbI/view?usp=sharing)
 
-Change the data directory in the machine_learning_dataloader.py to your data directory.
+Change the data directory "train_data_dir", "train_gt_dir" and "test_data_dir" in the machine_learning_dataloader.py to your own data directory.
 
 Now I don't have the test labels
 
@@ -47,7 +47,7 @@ Now I don't have the test labels
 
 ## Result
 
-Here are some results
+Here are some results. Because of some personal reasons, I lost most of submission history, and these are the few submission entries left.
 
 ### Binary classification
 
@@ -68,6 +68,14 @@ Here are some results
 | XGBoost | martin_marina_dong | RF | 50 | 0.76109 |
 | AutoML | martin_marina_dong | None | None | 0.76821 |
 
+
+## Future work
+
+1. For the method sift_kmeans. Maybe it's better to use the library of sklearn "KElbowVisualizer" to help to select the best number of clusters.
+
+2. Check the implementation of the feature extraction functions.
+
+3. Visualize some results such as the results of feature selections methods.
 
 ## Reference
 
