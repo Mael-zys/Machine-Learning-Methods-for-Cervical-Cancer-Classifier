@@ -11,11 +11,11 @@
 
 
 # 2. use martin feature mode
-python -u machine_learning_main.py --classifier "SVM" --binary True --mask_mode True --extract_feature "martin" --cv_mode "Grid"
+# python -u machine_learning_main.py --classifier "SVM" --binary True --mask_mode True --extract_feature "martin" --cv_mode "Grid"
 
 
 # 3. use marina feature mode
-# python -u machine_learning_main.py --classifier "AutoML" --binary True --mask_mode True --extract_feature "marina" --cv_mode "Grid"
+python -u machine_learning_main.py --classifier "SVM" --binary True --mask_mode True --extract_feature "marina" --cv_mode "Grid"
 
 
 # 4. use sift-kmeans feature mode
@@ -31,4 +31,4 @@ python -u machine_learning_main.py --classifier "SVM" --binary True --mask_mode 
 
 
 # 6. combine martin, marina and dong feature mode
-# python -u machine_learning_main.py --classifier "AutoML" --binary False --mask_mode True --extract_feature "martin_marina_dong" --cv_mode "Grid"
+python -u machine_learning_main.py --classifier "SVM" --binary False --mask_mode True --extract_feature "martin_marina_dong" --num_clusters 50 --cv_mode "Grid"

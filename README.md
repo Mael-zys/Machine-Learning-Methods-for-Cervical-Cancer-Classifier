@@ -29,19 +29,27 @@ Now I don't have the test labels
 
 - You can firstly have a look at the arguments of the machine_learning_main.py
 
-```
+```shell
     python machine_learning_main.py --help
 ```
 
 - Example
 
+1. Binary classification
+
+```shell
+    python -u machine_learning_main.py --classifier "SVM" --binary True --mask_mode True --extract_feature "marina" --cv_mode "Grid"
 ```
-    python -u machine_learning_main.py --classifier "SVM" --binary True --mask_mode True --extract_feature "martin" --cv_mode "Grid"
+
+2. Multiclass classification
+
+```shell
+    python -u machine_learning_main.py --classifier "SVM" --binary False --mask_mode True --extract_feature "martin_marina_dong" --num_clusters 50 --cv_mode "Grid"
 ```
 
 - You can also write all these codes in the machine_learning_main.sh and then run them all
 
-```
+```shell
     sh machine_learning_main.sh
 ```
 
@@ -51,23 +59,18 @@ Here are some results. Because of some personal reasons, I lost most of submissi
 
 ### Binary classification
 
-
 | Classifier | feature_extraction | feature_selection | feature number | Public Score |
 |  ----  | ----  | ---- | ---- | ---- |
 | SVM | marina | None | None | 0.94339 |
 | AutoML | marina | None | None | 0.94072 |
 
-
-
 ### Multi-class classification
-
 
 | Classifier | feature_extraction | feature_selection | feature number | Public Score |
 |  ----  | ----  | ---- | ---- | ---- |
 | SVM | martin_marina_dong | RF | 50 | 0.77220 |
 | XGBoost | martin_marina_dong | RF | 50 | 0.76109 |
 | AutoML | martin_marina_dong | None | None | 0.76821 |
-
 
 ## Future work
 
@@ -79,4 +82,19 @@ Here are some results. Because of some personal reasons, I lost most of submissi
 
 ## Reference
 
-To be continued
+1.	https://liverungrow.medium.com/sift-bag-of-features-svm-for-classification-b5f775d8e55f
+2.	https://blog.csdn.net/weixin_42486554/article/details/103732613
+3.	https://github.com/mayuri0192/Image-classification
+4.	https://github.com/budingtanke/image-classfication-SIFT-BOW
+5.	https://github.com/cohenNitzan/SVM-Kmeans-SIFT-pipe
+6.	https://www.osgeo.cn/opencv-python/ch05-imgcontours/sec03-contour-properties.html#aspect-ratio
+7.	https://github.com/joefutrelle/oii/tree/49d5f9dbd1675cf2c336dbb7df9c8195d087a3b1/ifcb2/features
+8.	https://www.researchgate.net/publication/265873515_Pap-smear_Benchmark_Data_For_Pattern_Classification
+9.	https://ieeexplore.ieee.org/document/8451588
+10.	https://doi.org/10.1007/s12652-020-02256-9
+11.	https://www.mdpi.com/2072-6694/12/12/3564/s1
+12.	https://hal.inria.fr/hal-01420292/document
+13.	https://github.com/slundberg/shap
+14.	https://github.com/mljar/mljar-supervised
+
+There are also some codes from my course lab works.
